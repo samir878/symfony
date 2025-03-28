@@ -3,9 +3,11 @@
 {% block title %}Hello MusicControlerController!{% endblock %}
 
 {% block body %}
-<ul>
- {% for  music in musicLists%}
-   <li>{{music.name}}</li>
-   {%endfor%}
-</ul>
+  <h1>List de music</h1>
+  <a href="{{path('app_music_new')}}">Ajouter une music</a>
+  <ul>
+   {% for  music in musicLists%}
+     <li>{{music.name}}</li>
+      {%endfor%}
+  </ul>
 {% endblock %}

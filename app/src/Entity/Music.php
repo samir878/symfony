@@ -15,9 +15,11 @@ class Music
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\NotBlanck]
     private ?string $name = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\NotBlanck]
     private ?string $url = null;
 
         #[ORM\Column]
